@@ -1,0 +1,174 @@
+:root {
+  font-family: kimera-text, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%
+}
+
+/* .css-et7x9c-MuiTypography-root, 
+.css-3aq61n-MuiTypography-root, 
+.css-xhidw9-MuiTypography-root,
+.css-ag7rrr-MuiTypography-root {
+  font-family: kimera-text, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif!important;
+} */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  background: #000;
+}
+
+.enter-fade {
+  animation-name: enter-fade;
+  animation-duration: 1s;
+}
+
+
+.text-enter {
+  opacity: 0;
+}
+
+.text-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.text-exit {
+  opacity: 1;
+}
+
+.text-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.theme-card {
+  transition: all .3s ease!important;
+  bottom: 0px;
+  position: relative;
+}
+
+.theme-card:hover {
+  bottom: 15px;
+  box-shadow: 0px 0px 40px #b492f866;
+}
+
+.enter-fade-70 {
+  animation-name: enter-fade-70;
+  animation-duration: 1s;
+}
+
+.react-multi-carousel-list {
+  padding-top: 100px;
+}
+
+.css-19bc7m6-MuiTypography-root,
+.css-1fthyv5-MuiTypography-root,
+.css-1cryn03-MuiTypography-root,
+.css-dj11fm-MuiTypography-root {
+  font-weight: 500!important;
+}
+
+.css-595a87-MuiTypography-root,
+.css-1ys2djj-MuiTypography-root,
+.css-xu9a2g-MuiTypography-root,
+.css-1pzt80w-MuiTypography-root,
+.css-wctvla-MuiTypography-root ,
+.css-1bqntq5-MuiButtonBase-root-MuiButton-root
+{
+  font-weight: 300!important;
+}
+
+.countdown {
+  animation-name: count-down;
+  animation-iteration-count: 3;
+  animation-duration: 1s;
+}
+
+.zoomtext {
+  animation-name: zoom-text;
+  animation-duration: .6s;
+}
+
+.appear { 
+  animation: appear;
+  animation-duration: .3s;
+}
+
+@font-face {
+  font-family: kimera-text;
+  src: url('/Fonts/FbByaliq-Light.otf') format('truetype');
+  font-weight: 300; /*light*/
+}
+
+@font-face {
+  font-family: kimera-text;
+  src: url('/Fonts/FbByaliq-Bold.otf') format('truetype');
+  font-weight: 700; /*bold*/
+}
+
+@font-face {
+  font-family: kimera-text;
+  src: url('/Fonts/FbByaliq-Medium.otf') format('truetype');
+  font-weight: 500; /*medium*/
+}
+
+@keyframes enter-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes black-cover {
+  from { opacity: 1; }
+  to { opacity: .7; }
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1s; }
+}
+
+@keyframes zoom-text {
+  0% {
+    font-size: 1em;
+    opacity: 0;
+  }
+  40% {
+    font-size: 7em;
+    opacity: 1;
+  }
+  60% {
+    font-size: 3em;
+  }
+  100% {
+    font-size: 3.75em;
+  }
+}
+
+@keyframes count-down {
+  0% {
+    width: 120px;
+    opacity: 0;
+  }
+  40% {
+    width: 200px;
+    opacity: 1;
+  }
+  50% {
+    width: 100px;
+  }
+  60% {
+    width: 120px;
+  }
+  100% {
+    width: 120px;
+  }
+}
